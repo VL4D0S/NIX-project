@@ -42,5 +42,3 @@
     </table>
 </body>
 </html>
-<?php 
-
