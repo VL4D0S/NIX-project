@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <div class="title-project">NIX-project</div>
+        <h1 class="title-project">NIX-project</h1>
         <nav class="menu">
-            <a href="#"><li>Урок 1</li></a>
+            <a href="/lessons/lesson-1/index.php"><li>Урок 1</li></a>
             <a href="#"><li>Урок 2</li></a>
         </nav>
     </header>

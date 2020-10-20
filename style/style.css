@@ -24,8 +24,8 @@ header {
 
 .title-project {
     padding-left: 40px;
-    padding-top: 25px;
     font-size: 40px;
+    font-weight: 500;
     letter-spacing: 1px;
     color: rgb(251, 253, 255);
     text-transform: uppercase;
@@ -47,7 +47,7 @@ header {
     color: aliceblue;
     font-size: 22px;
     font-weight: bold;
-    transition: color .3s linear;
+    transition: color .2s linear;
 }
 
 .menu > a:hover {
