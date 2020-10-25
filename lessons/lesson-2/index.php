@@ -12,7 +12,7 @@
     <table border="1">
         <?php
 
-        $colors = [1 => 'red', 2 => 'green', 3 => 'yellow', 4 => 'blue', 'def' => 'black'];
+        $colors = ['red' => 1, 'green' => 2, 'yellow' => 3, 'blue' => 4];
 
         for ($i = 1; $i <= 2; $i++) {
             echo "<tr>";
@@ -28,26 +28,9 @@
                 echo "<td>";
 
                 for ($num2 = 1; $num2 <= 10; $num2++) {
+                    $colorKey = array_search($num1, $colors);
 
-                    switch ($num1) {
-                        case 1:
-                            $colorNum = 1;
-                            break;
-                        case 2:
-                            $colorNum = 2;
-                            break;
-                        case 3:
-                            $colorNum = 3;
-                            break;
-                        case 4:
-                            $colorNum = 4;
-                            break;
-                        default:
-                            $colorNum = 'def';
-                            break;
-                    }
-                    
-                    $color = $colors[$colorNum];
+                    $color = $colorKey ?: "black"; 
 
                     $res = $num1 * $num2;
                     echo "<span style='color:{$color}'>{$num1} × {$num2} = {$res}<span></br>";
