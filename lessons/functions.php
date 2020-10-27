@@ -19,3 +19,14 @@ function colorSearch(int $num, array $colors)
         return $colorKey ?: "black";
     }
 }
+
+/**
+ * Функция для переворота строки с поддержкой кириллицы
+ * @return string перевёрнутая строка
+ * @param string $str строка, которую необходимо перевернуть
+ */
+function utf8_strrev(string $str): string
+{
+    preg_match_all('/./us', $str, $ar);
+    return join('', array_reverse($ar[0]));
+}
