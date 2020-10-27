@@ -1,5 +1,7 @@
 <?php 
 error_reporting(E_ALL);
+
+require('functions.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,12 +33,32 @@ error_reporting(E_ALL);
                 echo "<td>";
 
                 for ($num2 = 1; $num2 <= 10; $num2++) {
-                    $colorKey = array_search($num1, $colors);
-
-                    $color = $colorKey ?: "black"; 
 
                     $res = $num1 * $num2;
-                    echo "<span style='color:{$color}'>{$num1} × {$num2} = {$res}<span></br>";
+
+                    if ($num1 > 9) {
+
+                        [$color1Index0, $color1Index1] = colorSearch($num1, $colors);
+                    } else {
+                        $colorNum1 = colorSearch($num1, $colors);
+                    }
+
+                    if ($num2 > 9) {
+
+                        [$color2Index0, $color2Index1] = colorSearch($num2, $colors);
+                    } else {
+                        $colorNum2 = colorSearch($num2, $colors);
+                    }
+
+                    if ($res > 9) {
+
+                        [$colorResIndex0, $colorResIndex1] = colorSearch($res, $colors);
+                    } else {
+                        $colorRes = colorSearch($res, $colors);
+                    }
+
+                    echo "<span style='color:{$colorNum1}'>{$num1}</span> × <span style='color:{$colorNum2}'>{$num2}</span> = 
+                    <span style='color:{$colorRes}'>{$res}</span></br>";
                 }
 
                 echo "</td>";
