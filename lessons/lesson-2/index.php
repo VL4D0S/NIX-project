@@ -1,7 +1,7 @@
 <?php 
 error_reporting(E_ALL);
 
-require('/lessons/functions.php');
+require $_SERVER['DOCUMENT_ROOT'] . '/lessons/functions.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

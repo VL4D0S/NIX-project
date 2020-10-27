@@ -1,5 +1,5 @@
 <?php
-require('/lessons/functions.php');
+require $_SERVER['DOCUMENT_ROOT'] . '/lessons/functions.php';
 
 echo "<a href='/lessons/lesson-3/index.php'>Назад</a><br>";
 
