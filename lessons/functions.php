@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Функция для проверки цвета у передаваемого числа
+ * @return string/array цвет/массив цветов
+ * @param int $num число, у которого нужно проверить его цвет
+ */
 function colorSearch(int $num)
 {
     $strNum = strval($num);

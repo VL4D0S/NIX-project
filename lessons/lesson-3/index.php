@@ -10,7 +10,7 @@
     <a href="/">Главная</a>
     <form action="action.php" method="post">
         <input type="text" name="text">Введите текст<br>
-        <input type="submit">
+        <button>Отправить</button>
     </form>
 </body>
 </html>
