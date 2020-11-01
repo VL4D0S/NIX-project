@@ -2,8 +2,8 @@
 
 /**
  * Функция для проверки цвета у передаваемого числа
- * @return string/array цвет/массив цветов
  * @param int $num число, у которого нужно проверить его цвет
+ * @return string/array цвет/массив цветов
  */
 function colorSearch(int $num)
 {
@@ -39,8 +39,8 @@ function colorSearch(int $num)
 
 /**
  * Функция для переворота строки с поддержкой кириллицы
- * @return string перевёрнутая строка
  * @param string $str строка, которую необходимо перевернуть
+ * @return string перевёрнутая строка
  */
 function utf8_strrev(string $str): string
 {
